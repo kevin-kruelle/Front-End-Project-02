@@ -8,10 +8,11 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1.90fr 1.10fr;
-    grid-template-rows:100px minmax(200px, auto-fit) 400px;
-    
+    grid-template-rows:100px minmax(100px, auto-fit) 400px;
     grid-gap: 15px 30px; /*first column sets row gap*/
 }
+
+/*BELOW HEADER CONTENT*/
 
 header {
     grid-column-start: 1;
@@ -57,6 +58,7 @@ a {
 
 p {
     line-height: 20px;
+    opacity: 90%;
 }
 
 
@@ -69,6 +71,10 @@ header, footer {
     background-color: rgba(36, 36, 36, 0.9);
     color: rgb(179, 178, 178);
 }
+
+/*ABOVE HEADER CONTENT*/
+
+/*BELOW MAIN CONTENT*/
 
 main {
     margin-left: 260px;
@@ -153,6 +159,10 @@ span {
     margin: 10px 0;
 }
 
+/*ABOVE MAIN CONTENT*/
+
+/*BELOW ASIDE CONTENT*/
+
 aside {
     margin-right: 62.96%;
    width: 55%;
@@ -196,17 +206,26 @@ aside {
     padding-right: 10px;
 }
 
+/*ABOVE ASIDE CONTENT*/
+
+/*BELOW FOOTER CONTENT*/
+
 footer {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 14px;
+    border-top: 4px solid rgba(24, 24, 24, 0.520);
 }
 
 section {
-    /*margin: 0 22.69%;*/
     margin: 0 18%;
     display: flex;
+    flex-wrap: row wrap;
     justify-content: center / space-between ;
+}
+
+section p, section a {
+    opacity: 75%;
 }
 
 .footer-inline {
@@ -234,6 +253,7 @@ section {
 #small-fixed-header {
     background-color: rgb(44, 44, 44);
     width: 100%;
+    border-top:2px solid rgba(24, 24, 24, 0.520);
 }
 
 .copyright-sm {
@@ -250,3 +270,33 @@ section {
     opacity: 50%;
 }
 
+/*ABOVE FOOTER CONTENT*/
+
+@media screen and (min-width: 750px) and (max-width: 1055px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+        align-content: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #container {
+        box-sizing: border-box;
+    }
+    main, aside {
+        margin: 10px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+        width: 100vh;
+        align-content: center;
+    }
+}
