@@ -282,12 +282,14 @@ section p, section a {
         align-content: center;
     }
 
+    main, aside {
+        margin: 20px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
-    #container {
-        box-sizing: border-box;
-    }
+    
     main, aside {
         margin: 10px;
     }
@@ -298,5 +300,16 @@ section p, section a {
         height: 20vh;
         width: 100vh;
         align-content: center;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    footer {
+        width: 100vh;
+    }
+
+    section {
+        margin: 10px;
     }
 }
