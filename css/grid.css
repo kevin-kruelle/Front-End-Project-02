@@ -85,6 +85,11 @@ main {
     justify-content: space-around;
 }
 
+#title-border {
+    padding: 15px;
+    border-bottom: 2px dotted rgba(172, 172, 172, 0.3);
+}
+
 #date-circle {
     background-color: rgb(252, 238, 218);
     border: 1px solid transparent;
