@@ -1,7 +1,8 @@
 /*
-* KNOWN ISSUES
+* KNOWN ISSUES:
 * Why does my <article> content move when typing in contact form?
 * I had hover properties set for the images so the opacity would turn to 80% when user hovers over the image but that makes all my <article> content shift as well. What am I doing wrong that is making content shift like this?
+* Spacing of <aricle> grid items not working correctly/I can't find what I'm doing wrong. To accomplish the spacing I used some left/right margins but I know there is a way to accomplish this using grid params.
 */
 
 body {
