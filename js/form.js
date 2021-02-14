@@ -1,17 +1,14 @@
 
 function validateContactForm() {
-    let x = document.forms['form']['firstname'].value;
-    let j = document.forms['form']['lastname'].value;
-    let y = document.forms['form']['textarea'].value;
-    if (x == '') {
+    let firstName = document.forms['form']['firstname'].value;
+    let lastName = document.forms['form']['lastname'].value;
+    let textArea = document.forms['form']['textarea'].value;
+    if (firstName == '') {
         alert('First name must be filled out');
-        return false;
-    } else if (j == '') {
+    } else if (lastName == '') {
         alert('Last name must be filled out');
-        return false;
-    } else if (y == '') {
+    } else if (textArea == '') {
         alert('Type a message in the message box.');
-        return false;
     }
 }
 
