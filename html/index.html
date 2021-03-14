@@ -9,11 +9,12 @@
     <script src="https://kit.fontawesome.com/66fdaf3caf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="container">
-        <header>
-            <h1>Jkaros</h1>
-            <nav>
-                <ul>
+    <header>
+        <h1>Jkaros</h1>
+        <nav>
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn">|||</button>
+                <ul id="myDropdown" class="dropdown-content">
                     <li><a href="#" id="home">Home</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -21,9 +22,11 @@
                     <li><a href="./blog-post.html">Blog</a></li>
                     <li><a href="#" id="contact-nav">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
+            </div>
+        </nav>
+    </header>
+    <div class="flex-container">
+        <main class="flex-container-main">
             <div class="column-left">
                 <div id="main-title">
                     <div id="date-circle">
@@ -59,7 +62,6 @@
                         </div>
                     </div>
                     <div>
-
                         <div id="mosby-article">
                             <a href="#" class="hover-imgs"><img src="../img/checkered-box.jpg" alt="#" class="responses-img"></a>
                             <div id="mosby-box">
@@ -80,43 +82,27 @@
                 </form>
             </div>
         </main>
-        <aside>
+        <aside class="flex-container-aside">
             <div class="aside-border">
                 <div class="popularposts-border">
                     <h3>Popular Posts</h3>
                     <div class="aside-container">
-                        <div>
                             <a href="#" class="hover-imgs"><img src="../img/dark-grey.jpg" class="post-img"></a>
-                        </div>
-                        <div class="inline-posts">
                             <p>Vestibum Malesuada<br>
                             Etiam MAgna<br>
-                            22 Nov, 2012
-                        </div>
+                            22 Nov, 2012</p>
                     </div>
-                    <div>
-                        <div class="aside-container">
-                            <div class="inline-posts2">
-                                <a href="#" class="hover-imgs"><img src="../img/dark-grey.jpg" class="post-img"></a>
-                            </div>
-                            <div class="inline-posts2">
-                                <p>Mattis Egestas Fringilla<br>
-                                Consectetur<br>
-                                5 Nov, 2012
-                            </div>
-                        </div>
+                    <div class="aside-container">
+                            <a href="#" class="hover-imgs"><img src="../img/dark-grey.jpg" class="post-img"></a>
+                            <p>Mattis Egestas Fringilla<br>
+                            Consectetur<br>
+                            5 Nov, 2012</p>
                     </div>
-                    <div>
-                        <div class="aside-container">
-                            <div class="inline-posts3">
-                                <a href="#" class="hover-imgs"><img src="../img/dark-grey.jpg" class="post-img"></a>
-                            </div>
-                            <div>
-                                <p>Justo Lorem Fermentum<br>
-                                Ultricies Pharetra<br>
-                                12 Nov, 2012</p>
-                            </div>
-                        </div>
+                    <div class="aside-container">
+                            <a href="#" class="hover-imgs"><img src="../img/dark-grey.jpg" class="post-img"></a>
+                            <p>Justo Lorem Fermentum<br>
+                            Ultricies Pharetra<br>
+                            12 Nov, 2012</p>
                     </div>
                 </div>
                 <div class="aside-borders">
@@ -130,66 +116,67 @@
                 </div>
             </div>
         </aside>
-        <footer>
-            <section>
-                <div id="popular-posts" class="footer-inline">
-                    <h3>Popular posts</h3>
-                        <div>
-                            <a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a><br>
-                                <p>14 Nov, 2012</p>
-                        </div>
-                        <div>
-                            <a href="#">scelerisque nisl consectetur et.</a><br>
-                                <p>22 May, 2012</p>
-                        </div>
-                        <div>
-                            <a href="#">Pallentesque ornare sem lacinia quam venenatis vestibulum. Fusce</a>
-                                <p>15 July, 2012</p>
-                        </div>   
-                </div>
-                <div class="footer-inline">
-                    <h3>Twitter</h3>
-                        <div class="twitter-links">
-                            <p><i class="fab fa-twitter"></i>
-
-                                zpraesent commodo cursus magna Morbi leo risus nulla consectetur. <span class="text-blue">- 21 hours ago</span></p>
-                        </div>
-                        <div class="twitter-links">
-                            <p><i class="fab fa-twitter"></i>
-
-                                Vestibulum id ligula porta euismod semper. auctor dolor fermentum. <span class="text-blue">- 2 days ago</span></p>
-                        </div>
-                        <div class="twitter-links">
-                            <p><i class="fab fa-twitter"></i>
-                                
-                                Donec ullamcorper nulla non metus auctor.<span class="text-blue"> - 3 days ago</span></p>
-                        </div>
-                </div>
-                <div class="footer-inline">
-                    <h3>A little about me</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <p>Donec id elit non porta gravida at exget metus. Nullam quis risus eget urna mollis ornare vel.</p>
-                </div>
-                <div id="contact-form" class="footer-inline">
-                    <h3>Contact form</h3>
-                        <form name="form" action="./indexduplicate.html" onsubmit="return validateContactForm()" method="post">
-                            <input type="text" id="firstname" name="firstname" placeholder="firstname:"><br>
-                            <input type="text" id="lastname" name="lastname" placeholder="lastname:"><br>
-                            <textarea type="textarea" id="textarea"></textarea>
-                            <button type="submit" id="submit-button">Submit</button>
-                        </form>
-                </div>
-            </section>
-            <div id="small-fixed-header">
-                <div class="copyright-sm">
-                    <p id="copyright"> &copy; 2011 Ikaros. Theme by <span class="text-blue">elemis.</span></p>
-                </div>
-                <div class="copyright-sm">
-                    <a href="#"><img src="../img/social-media-bar.jpg" alt="#" id="socialmediabar"></a>
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <section>
+            <div id="popular-posts" class="footer-inline">
+                <h3>Popular posts</h3>
+                    <div>
+                        <a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a><br>
+                            <p>14 Nov, 2012</p>
+                    </div>
+                    <div>
+                        <a href="#">scelerisque nisl consectetur et.</a><br>
+                            <p>22 May, 2012</p>
+                    </div>
+                    <div>
+                        <a href="#">Pallentesque ornare sem lacinia quam venenatis vestibulum. Fusce</a>
+                            <p>15 July, 2012</p>
+                    </div>   
+            </div>
+            <div class="footer-inline">
+                <h3>Twitter</h3>
+                    <div class="twitter-links">
+                        <p><i class="fab fa-twitter"></i>
+
+                            zpraesent commodo cursus magna Morbi leo risus nulla consectetur. <span class="text-blue">- 21 hours ago</span></p>
+                    </div>
+                    <div class="twitter-links">
+                        <p><i class="fab fa-twitter"></i>
+
+                            Vestibulum id ligula porta euismod semper. auctor dolor fermentum. <span class="text-blue">- 2 days ago</span></p>
+                    </div>
+                    <div class="twitter-links">
+                        <p><i class="fab fa-twitter"></i>
+                            
+                            Donec ullamcorper nulla non metus auctor.<span class="text-blue"> - 3 days ago</span></p>
+                    </div>
+            </div>
+            <div class="footer-inline">
+                <h3>A little about me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <p>Donec id elit non porta gravida at exget metus. Nullam quis risus eget urna mollis ornare vel.</p>
+            </div>
+            <div id="contact-form" class="footer-inline">
+                <h3>Contact form</h3>
+                    <form name="form" action="./indexduplicate.html" onsubmit="return validateContactForm()" method="post">
+                        <input type="text" id="firstname" name="firstname" placeholder="firstname:"><br>
+                        <input type="text" id="lastname" name="lastname" placeholder="lastname:"><br>
+                        <textarea type="textarea" id="textarea"></textarea>
+                        <button type="submit" id="submit-button">Submit</button>
+                    </form>
+            </div>
+        </section>
+        <div id="small-fixed-header">
+            <div class="copyright-sm">
+                <p id="copyright"> &copy; 2011 Ikaros. Theme by <span class="text-blue">elemis.</span></p>
+            </div>
+            <div class="copyright-sm">
+                <a href="#"><img src="../img/social-media-bar.jpg" alt="#" id="socialmediabar"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/dropdown.js"></script>
     <script src="../js/form.js"></script>
 </body>
 </html>

@@ -13,16 +13,20 @@
         <header>
             <h1>Jkaros</h1>
             <nav>
-                <ul>
-                    <li><a href="./index.html" id="home">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#" id="contact-nav">Contact</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button onclick="dropDown()" class="dropbtn">|||</button>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a href="./index.html" id="home">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#" id="contact-nav">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <div id="flex-container">
             <article class="article-margin-left">
                 <div class="blog-post-container">
                     <a href="#"><img src="../img/blog picture.jpg"></a>
@@ -158,7 +162,7 @@
                     </div>
                 </div>
             </article>
-            
+        </div>
             
         <footer>
             <section>
@@ -220,7 +224,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="../js/dropdown.js"></script>
     <script src="../js/form.js"></script>
 </body>
 </html>
